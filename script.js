@@ -2,7 +2,7 @@ function play(playerChoice) {
     const choices = ['rock', 'paper', 'scissors'];
     const computerChoice = choices[Math.floor(Math.random() * choices.length)];
   
-    document.getElementById('computer-choice').textContent = computerChoice;
+    document.getElementById('computerchoice').textContent = computerChoice;
   
     const result = compareChoices(playerChoice, computerChoice);
   
@@ -30,6 +30,6 @@ function play(playerChoice) {
   
   function reset() {
     document.getElementById('message').textContent = '';
-    document.getElementById('computer-choice').textContent = '';
+    document.getElementById('computerchoice').textContent = '';
     document.querySelector('.result').style.display = 'none';
   }
